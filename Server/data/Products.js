@@ -1,0 +1,98 @@
+const products = [
+    {
+        name: "Vinamilk 100% no suger",
+        image: "/images/milk.png",
+        description:
+            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
+        price: 0.5,
+        countInStock: 10,
+        rating: 4,
+        numReviews: 4,
+    },
+    {
+        name: "Grape",
+        image: "/images/grape.png",
+        description:
+            "A grape is a fruit, botanically a berry, of the deciduous woody vines of the flowering plant genus Vitis. Grapes are a non-climacteric type of fruit, generally occurring in clusters.",
+        price: 3,
+        countInStock: 10,
+        rating: 2,
+        numReviews: 2,
+    },
+    {
+        name: "Bread",
+        image: "/images/bread.png",
+        description:
+            "Kinh Do fresh bread brings delicious fresh breads produced on modern technology, safe for users.",
+        price: 1,
+        countInStock: 10,
+        rating: 3.5,
+        numReviews: 3,
+    },
+    {
+        name: "Potato chip",
+        image: "/images/chips.png",
+        description:
+            "Snack is always fragrant, potatoes are flexible and crispy. Real potato taste. Quite fragrant, rich on each piece of passion fruit.",
+        price: 1,
+        countInStock: 10,
+        rating: 5,
+        numReviews: 9,
+    },
+    {
+        name: "Yogurt special flavor",
+        image: "/images/yogurt2.png",
+        description: "A kind of yogurt",
+        price: 3,
+        countInStock: 7,
+        rating: 2,
+        numReviews: 2,
+    },
+    {
+        name: "Yogurt no sugar",
+        image: "/images/yogurt1.png",
+        description: "A kind of yogurt",
+        price: 2,
+        countInStock: 10,
+        rating: 0,
+        numReviews: 0,
+    },
+    {
+        name: "Carrot",
+        image: "/images/carrot.png",
+        description: "A kind of vegetable",
+        price: 3,
+        countInStock: 0,
+        rating: 0,
+        numReviews: 0,
+    },
+    {
+        name: "Pear",
+        image: "/images/pear.png",
+        description: "A kind of fruit",
+        price: 3,
+        countInStock: 10,
+        rating: 0,
+        numReviews: 0,
+    },
+    {
+        name: "Spinach",
+        image: "/images/spinach.png",
+        description: "A kind of vegetable",
+        price: 2,
+        countInStock: 10,
+        rating: 0,
+        numReviews: 0,
+    },
+    {
+        name: "Banana",
+        image: "/images/banana.png",
+        description: "A kind of fruit",
+        price: 21,
+        countInStock: 10,
+        rating: 0,
+        numReviews: 0,
+    },
+];
+
+export default products;
