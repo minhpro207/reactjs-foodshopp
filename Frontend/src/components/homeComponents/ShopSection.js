@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { lisCategories } from '../../redux/Actions/CategoryActions';
+import { listCategories } from '../../redux/Actions/CategoryActions';
 import { listProduct } from '../../redux/Actions/ProductActions';
 import { ORDER_DETAILS_RESET } from '../../redux/Constants/OrderConstants';
 import Message from '../LoadingError/Error';
@@ -33,7 +33,7 @@ const ShopSection = () => {
 
   useEffect(() => {
     dispatch(listProduct());
-    dispatch(lisCategories());
+    dispatch(listCategories());
     dispatch({ type: ORDER_DETAILS_RESET });
   }, [dispatch]);
 
@@ -130,7 +130,7 @@ const ShopSection = () => {
                           className="form-select"
                           onChange={handleCategoryChange}
                         >
-                          <option value="">Select filter</option>
+                          <option value="">All</option>
                           {categories.map((category) => (
                             <option value={category._id} key={category._id}>
                               {category.name}

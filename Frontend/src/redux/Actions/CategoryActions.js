@@ -2,11 +2,11 @@ import {
   CATEGORY_LIST_FAIL,
   CATEGORY_LIST_REQUEST,
   CATEGORY_LIST_SUCCESS,
-} from "../Constants/CategoryConstants";
-import axios from "axios";
+} from '../Constants/CategoryConstants';
+import axios from 'axios';
 
 // Category list
-export const lisCategories = () => async (dispatch) => {
+export const listCategories = () => async (dispatch) => {
   try {
     dispatch({ type: CATEGORY_LIST_REQUEST });
     const { data } = await axios.get(`/api/categories`);

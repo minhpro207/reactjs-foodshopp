@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import {
   editCategory,
-  lisCategories,
+  listCategories,
   updateCategory,
 } from '../../redux/Actions/CategoryActions';
 import { CATEGORY_UPDATE_RESET } from '../../redux/Constants/CategoryConstants';
@@ -53,7 +53,7 @@ const EditCategory = (props) => {
         setName(category.name);
         setDescription(category.description);
         setIsEdit(true);
-        dispatch(lisCategories());
+        dispatch(listCategories());
       }
     }
   }, [category, dispatch, categoryId, successUpdate]);

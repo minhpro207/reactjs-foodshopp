@@ -1,5 +1,5 @@
-import React from "react";
-import { ToastContainer } from "react-toastify";
+import React from 'react';
+import { ToastContainer } from 'react-toastify';
 
 const Toast = () => {
   return (
@@ -11,7 +11,7 @@ const Toast = () => {
         closeOnClick
         rtl={false}
       />
-      {/* Same as */}
+      {}
       <ToastContainer />
     </div>
   );

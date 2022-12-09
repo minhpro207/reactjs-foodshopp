@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { lisCategories } from "../../redux/Actions/CategoryActions";
-import CategoriesTable from "./CategoriesTable";
-import CreateCategory from "./CreateCategory";
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { listCategories } from '../../redux/Actions/CategoryActions';
+import CategoriesTable from './CategoriesTable';
+import CreateCategory from './CreateCategory';
 
 const MainCategories = () => {
   const dispatch = useDispatch();
@@ -14,7 +14,7 @@ const MainCategories = () => {
   const { error: errorDelete, success: successDelete } = categoryDelete;
 
   useEffect(() => {
-    dispatch(lisCategories());
+    dispatch(listCategories());
   }, [dispatch, successDelete]);
 
   return (

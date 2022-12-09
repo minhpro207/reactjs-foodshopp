@@ -19,7 +19,7 @@ import axios from 'axios';
 import { logout } from './UserActions';
 
 // Category list
-export const lisCategories = () => async (dispatch, getState) => {
+export const listCategories = () => async (dispatch, getState) => {
   try {
     dispatch({ type: CATEGORY_LIST_REQUEST });
     const {
@@ -65,7 +65,7 @@ export const createCategory =
         config
       );
       dispatch({ type: CATEGORY_CREATE_SUCCESS, payload: data });
-      dispatch(lisCategories());
+      dispatch(listCategories());
     } catch (error) {
       const message =
         error.response && error.response.data.message

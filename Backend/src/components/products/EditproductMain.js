@@ -3,7 +3,7 @@ import { Img } from 'react-image';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
-import { lisCategories } from '../../redux/Actions/CategoryActions';
+import { listCategories } from '../../redux/Actions/CategoryActions';
 import { editProduct, updateProduct } from '../../redux/Actions/ProductActions';
 import {
   deleteUploadImage,
@@ -54,7 +54,7 @@ const EditProductMain = (props) => {
   const { success: successDelete, error: errorDelete } = imageDelete;
 
   useEffect(() => {
-    dispatch(lisCategories());
+    dispatch(listCategories());
     if (successProduct) {
       dispatch({ type: PRODUCT_UPDATE_RESET });
       toast.success('Product Updated', ToastObjects);

@@ -1,10 +1,10 @@
 import React from 'react';
 import { Redirect, Route } from 'react-router-dom';
 
-const PrivateRouter = ({ component: Component, ...rest }) => {
+const PrivateRouter = ({ component: Component, path }) => {
   return (
     <Route
-      {...rest}
+      path={path}
       component={(props) => {
         const token = window.localStorage.getItem('userInfo');
         if (token) {

@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { lisCategories } from '../../redux/Actions/CategoryActions';
+import { listCategories } from '../../redux/Actions/CategoryActions';
 import { lisProducts } from '../../redux/Actions/ProductActions';
 import Message from '../LoadingError/Error';
 import Loading from '../LoadingError/Loading';
@@ -34,7 +34,7 @@ const MainProducts = () => {
 
   useEffect(() => {
     dispatch(lisProducts());
-    dispatch(lisCategories());
+    dispatch(listCategories());
   }, [dispatch, successDelete, successDeleteImage]);
 
   // Search product

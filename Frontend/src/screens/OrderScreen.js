@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { PayPalButton } from 'react-paypal-button-v2';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import Footer from '../components/Footer';
 import { getOrderDetails, payOrder } from '../redux/Actions/OrderActions';
 import { ORDER_PAY_RESET } from '../redux/Constants/OrderConstants';
 import Header from './../components/Header';
@@ -237,6 +238,7 @@ const OrderScreen = ({ match }) => {
           </>
         )}
       </div>
+      <Footer />
     </>
   );
 };
